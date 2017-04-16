@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #373c43;
+}
+.btn,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'open_sansregular', Arial, sans-serif;
+}
+.navbar-brand {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.filters {
+  border: 1px solid #ccc;
+  padding: 20px;
+  height: 100%;
+  background: #fff;
+}
+@media screen and (max-width: 768px) {
+  .filters {
+    border: none;
+    border-right: 1px solid #ccc;
+  }
+}
+.filters:hover {
+  box-shadow: 1px 1px 1px 1px #ddd;
+}
+.results__item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+}
+.results__item:hover {
+  box-shadow: 1px 1px 1px 1px #ddd;
+}
+.results__desc-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .side-collapse-container.out {
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .side-collapse {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    position: fixed;
+    overflow: hidden;
+    box-shadow: 1px 0 4px #ccc;
+    transition: all 0.4s;
+  }
+  .side-collapse.in {
+    left: -240px;
+    width: 0;
+  }
+  .navbar-collapse {
+    z-index: 1040;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+}

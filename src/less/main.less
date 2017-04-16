@@ -1,0 +1,46 @@
+@bg-black: #101114;
+@bg-black-light: #1f2229;
+@text-color-main: #5b5b5b;
+@font-color: #373c43;
+@html-size-base: 14px;
+@font-size: 1.5rem;
+@font-family__main: Arial, sans-serif;
+@font-family__ext: 'open_sansregular', Arial, sans-serif;
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: @html-size-base;
+  @media (max-width: 767px) {
+    font-size: @html-size-base - 2px;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: @font-family__main;
+  color: @font-color;
+}
+
+.btn,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: @font-family__ext;
+}
+
+.navbar-brand {
+  flex-grow: 1;
+}
+@import url(_filters.less);
+@import url(_results.less);
+@import url(_collapse-left.less);

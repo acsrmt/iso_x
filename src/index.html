@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISO</title>
+</head>
+
+<body class="touch-handler">
+  <div class="side-collapse-container"></div>
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-12">
+        <div class=" navbar navbar-toggleable-sm navbar-light bg-faded text-center">
+          <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <a class="navbar-brand" href="#"><h1>HEADER</h1></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 collapse navbar-collapse show" id="navbarSupportedContent">
+        <div class="side-collapse in">
+          <div class="filters">
+            <div class="text-center hidden-md-up">
+              <h3>HEADER</h3></div>
+            @@include('_filters.html')
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="results">@@include('_results.html')</div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/hammer.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

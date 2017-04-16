@@ -1,0 +1,29 @@
+<h3>Filters</h3>
+<form id="filter-form">
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-12 col-form-label">Price</label>
+    <div class="col-sm-6 mb-2 mb-sm-0">
+      <input type="text" class="form-control" name="minprice" placeholder="from 100" pattern="[0-9]">
+    </div>
+    <div class="col-sm-6 mb-2 mb-sm-0">
+      <input type="text" class="form-control" name="maxprice" placeholder="to 1000" pattern="\d*">
+    </div>
+  </div>
+  <fieldset class="form-group row">
+    <legend class="col-form-legend col-12">Brands</legend>
+    <div class="col-sm-12">
+      <div class="form-check">
+        <label class="form-check-label">
+             <input class="form-check-input" type="checkbox" name="brand" value="KNAUF">
+             KNAUF
+         </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+             <input class="form-check-input" type="checkbox" name="brand" value="CYPROC">
+             CYPROC
+         </label>
+      </div>
+    </div>
+  </fieldset>
+</form>
